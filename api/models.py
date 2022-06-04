@@ -1,7 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
-import django
 from django.contrib.postgres.fields import ArrayField
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 class BaseModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, editable=False)

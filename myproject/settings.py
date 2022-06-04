@@ -29,7 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'accounts',
     'api',
+    
 ]
 
 REST_FRAMEWORK = {
@@ -65,6 +67,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'myproject.urls'
+AUTH_USER_MODEL = 'accounts.User'
 
 TEMPLATES = [
     {
